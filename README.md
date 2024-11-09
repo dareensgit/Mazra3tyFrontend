@@ -2,7 +2,8 @@
 SWE project
 
 Scrum Team Formation:
-Abdelrahmannnnn Abdelrassoul
+
+Abdelrahman Abdelrassoul
 
 Dareen Sameh
 
