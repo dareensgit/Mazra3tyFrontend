@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* --- Color variables --- */
+    --black_900: #000000;
+    --black_900_2a: #0000002a;
+    --black_900_66: #00000066;
+    --black_900_7f: #0000007f;
+    --black_900_89: #00000089;
+    --black_900_b2: #000000b2;
+    --black_900_cc: #000000cc;
+    --blue_a400: #1877f2;
+    --blue_gray_100: #d9d9d9;
+    --gray_700: #695b5b;
+    --light_green_100: #e4ecce;
+    --light_green_900: #426b1f;
+    --red_500: #ea4335;
+    --white_a700: #ffffff;
+    --white_a700_14: #ffffff14;
+
+    /* --- Shadow variables --- */
+    --shadow-xs: 0 2px 3px 0 #0000002a;
+
+    /* --- Border radius variables --- */
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 10px;
+
+    /* --- Spacing variables --- */
+    --space-xs: 8px;
+    --space-sm: 10px;
+    --space-md: 14px;
+    --space-lg: 16px;
+  }
+
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+
+  /* Override default focus colors for tailwindcss-forms */
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+  }
+
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
+
+@layer components {
+  /* --- Container CSS --- */
+  .container-xs {
+    @apply w-full mx-auto max-w-[1480px];
+  }
+}
+
+
+
